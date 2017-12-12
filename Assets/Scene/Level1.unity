@@ -764,7 +764,7 @@ MonoBehaviour:
   pixelSnap: 0
   onClick:
   - mTarget: {fileID: 1911250954}
-    mMethodName: onSoundClick
+    mMethodName: onCloseClick
     mParameters: []
     oneShot: 0
 --- !u!114 &125454729
@@ -3970,7 +3970,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4153888709862674, guid: 6b93f5f73b4ea1d409606c757b3e82bb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -250
+      value: -299
       objectReference: {fileID: 0}
     - target: {fileID: 4153888709862674, guid: 6b93f5f73b4ea1d409606c757b3e82bb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5980,7 +5980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1684974720
 Transform:
   m_ObjectHideFlags: 0

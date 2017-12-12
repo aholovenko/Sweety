@@ -62,13 +62,20 @@ public class LevelController : MonoBehaviour {
 	public void onChooseLevelClick(){
 		SceneManager.LoadScene ("Level1");
 	}
+		
 
 	public void elixirLost(){
 		elixir--;
 		if (elixir == 0) {
 			OnGhostDeath (Ghost.current);
-			looseWindow.SetActive (true);
+
+			//looseWindow.SetActive (true);
 		}
+	}
+
+	IEnumerator onLooseWindow(){
+		yield return new WaitForSeconds (1f);
+		looseWindow.SetActive (true);
 	}
 
 	public void addDonut(){
@@ -81,6 +88,7 @@ public class LevelController : MonoBehaviour {
 		ghost.GetComponent<Rigidbody2D> ().isKinematic = true;
 		ghost.verticalSpeed = 0;
 		ghost.horizontalSpeed = 0;
+		StartCoroutine (onLooseWindow ());
 		//this.ghost.SetActive (false);
 
 	}
