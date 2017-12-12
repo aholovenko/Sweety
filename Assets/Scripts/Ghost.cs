@@ -24,6 +24,10 @@ public class Ghost : MonoBehaviour {
 		//LevelController.current.SetStartPosition(transform.position);
 	}
 
+	public void MakeFaster(){
+		this.horizontalSpeed *= 1.5f;
+	}
+
 	// Update is called once per frame
 	void FixedUpdate () {
 	}

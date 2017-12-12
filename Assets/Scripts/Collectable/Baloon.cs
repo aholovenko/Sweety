@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Donut : Collectable {
+public class Baloon : Collectable {
 
-	// Use this for initialization
 	protected override void OnGhostHit(Ghost ghost){
-		LevelController.current.addDonut();
+		LevelController.current.elixirLost();
 		CollectedHide ();
 	}
 }
